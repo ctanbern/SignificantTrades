@@ -9,7 +9,7 @@ class Bitfinex extends Exchange {
     this.endpoints = {
       PRODUCTS: 'https://api.bitfinex.com/v1/symbols',
       TRADES: () =>
-        `https://api.bitfinex.com/v2/trades/t${this.pair}/hist?limit=1000`,
+        `https://api-pub.bitfinex.com/v2/trades/t${this.pair}/hist?limit=1000`,
     }
 
     this.matchPairName = (pair) => {
